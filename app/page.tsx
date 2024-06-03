@@ -1,0 +1,21 @@
+import ECommerce from "@/components/Dashboard/E-commerce";
+import { Metadata } from "next";
+import DefaultLayout from "@/components/Layouts/DefaultLayout";
+import Instructor from "@/components/Dashboard/instructor";
+
+export const metadata: Metadata = {
+  title:
+    "TurtleSwim",
+  description: "This is dashboard for students",
+};
+
+export default function Home() {
+  return (
+    <>
+      <DefaultLayout>
+        <ECommerce />
+        <Instructor/>
+      </DefaultLayout>
+    </>
+  );
+}
